@@ -3,6 +3,17 @@
     "name": "Reminder Extension",
     "version": "1.0",
     "description": "Our chrome extension.",
-    "action"
+
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "images/icon16.png", 
+            "24": "images/icon24.png",
+            "32": "images/icon32.png"
+        }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
     
