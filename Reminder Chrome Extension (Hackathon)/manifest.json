@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Later Gator",
+    "name": "LaterGator",
     "version": "1.0",
     "description": "From chaos to order -- manage your web finds effortlessly with Later Gator!",
     "action": {
         "default_popup": "index.html",
-        "default_icon": "icons/latergator.png" ,
+        "default_icon": "icons/latergator2.png" ,
         "default_title": "LaterGator"
     },
     "permissions": [

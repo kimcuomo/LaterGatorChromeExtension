@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const titleLink = document.createElement('a');
                 titleLink.href = page.url;
                 titleLink.target = '_blank';
-                titleLink.innerHTML = `<img src="${page.favIcon}" alt="Icon" class="favicon"> ${page.title}`;
+                titleLink.innerHTML = `<img src="${page.favIcon}" alt="Icon" class="favicon"> ${page.tabTitle}`;
 
                 const dateDiv = document.createElement('div');
                 dateDiv.className = 'reminderDate';
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const noteDiv = document.createElement('div');
                 noteDiv.className = 'note';
-                noteDiv.textContent = `Note: ${page.note}`;
+                noteDiv.textContent = page.note ? `Notes: ${page.note}` : '';
 
                 //adds a remove button
                 const removeButton = document.createElement('button');
@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function formatDate(datetime) {
+        if (!datetime) return 'No reminder set';
         const date = new Date(datetime);
         const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
         const month = months[date.getMonth()];

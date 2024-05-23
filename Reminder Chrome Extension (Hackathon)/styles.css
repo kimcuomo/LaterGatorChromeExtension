@@ -1,24 +1,30 @@
 body {
     font-family: Georgia, serif;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 2px;
     word-spacing: 2px;
     width: 250px;
     padding: 10px;
-    background-color: #c0c0c0;
+    background-color: #e1e1e1;
 }
 #createEvent {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 #tabTitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
+    justify-content: center;
 }
 #note {
+    font-size: 11px;
+    font-style: italic;
     display: flex;
     flex-direction: column;
 }
@@ -35,7 +41,12 @@ body {
     margin-top: 10px;
     padding: 10px;
     width: 100px;
+    display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-style: Georgia, serif;
+    font-size: 12;
 }
 
 .btn:hover { 
@@ -56,13 +67,13 @@ body {
 }
 
 .reminderTitle {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin: 10px;
 }
 
 .reminderDate {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 #eventList {
@@ -70,6 +81,7 @@ body {
     width: 250px;
     min-height: 300px;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .reminders {
@@ -79,9 +91,8 @@ body {
     border-radius: 10px;
 }
 
-h1 {
-    color: rgb(209, 252, 209);
-    font-size: 20px;
-    text-align: center;
-    font-style: italic;
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
