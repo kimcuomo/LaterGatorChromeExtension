@@ -1,15 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "Reminder Extension",
+    "name": "Later Gator",
     "version": "1.0",
-    "description": "Our chrome extension.",
+    "description": "From chaos to order -- manage your web finds effortlessly with Later Gator!",
 
     "browser_action": {
         "default_popup": "index.html",
         "default_icon": {
-            "16": "images/icon16.png", 
-            "24": "images/icon24.png",
-            "32": "images/icon32.png"
+            "icon1": "icons/latergator.png" 
         }
     },
     "permissions": [
