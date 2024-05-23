@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const dateDiv = document.createElement('div');
                 dateDiv.className = 'reminderDate';
-                dateDiv.textContent = `Reminder set for: ${formatDate(page.reminder)}`;
+                dateDiv.textContent = `Reminder: ${formatDate(page.reminderDate)}`;
 
                 const noteDiv = document.createElement('div');
                 noteDiv.className = 'note';
@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 //adds a remove button
                 const removeButton = document.createElement('button');
                 removeButton.textContent = 'Remove';
+                removeButton.className = "removeButton";
                 removeButton.addEventListener('click', () => {
                     savedPages.splice(index, 1);
                     chrome.storage.sync.set({ savedPages }, displaySavedPages);

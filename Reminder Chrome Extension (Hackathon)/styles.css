@@ -3,24 +3,28 @@ body {
     font-size: 11px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    width: 250px;
+    width: 275px;
     padding: 10px;
     background-color: #e1e1e1;
 }
 #createEvent {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-    padding: 15px;
+    padding-left: 17px;
+    padding-bottom: 15px;
     border-radius: 10px;
     margin-bottom: 10px;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
     justify-content: center;
+    width: 250px;
 }
 #tabTitle {
     font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #note {
     font-size: 11px;
@@ -29,6 +33,7 @@ body {
     flex-direction: column;
 }
 #noteBox {
+    width: 100%;
     height: 40px;
     margin-bottom: 10px;
 }
@@ -42,11 +47,13 @@ body {
     padding: 10px;
     width: 100px;
     display: flex;
+    align-self: center;
     align-items: center;
     align-content: center;
     justify-content: center;
-    font-style: Georgia, serif;
+    font-family: Georgia, serif;
     font-size: 12;
+    border-radius: 10px;
 }
 
 .btn:hover { 
@@ -60,10 +67,14 @@ body {
     margin-right: 8px;
 }
 
-.reminder {
+.event {
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 10px;
     background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 2px #244e1e;
 }
 
 .reminderTitle {
@@ -95,4 +106,12 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto; 
+}
+
+.removeButton {
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 2px;
+    font-family: Georgia, serif;
 }
