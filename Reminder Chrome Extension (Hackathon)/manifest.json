@@ -3,11 +3,10 @@
     "name": "Later Gator",
     "version": "1.0",
     "description": "From chaos to order -- manage your web finds effortlessly with Later Gator!",
-
-    "browser_action": {
+    "action": {
         "default_popup": "index.html",
         "default_icon": {
-            "icon1": "icons/latergator.png" 
+            "icon1": "latergator.png" 
         }
     },
     "permissions": [
