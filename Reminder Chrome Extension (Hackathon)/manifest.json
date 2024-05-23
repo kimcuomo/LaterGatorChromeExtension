@@ -5,12 +5,12 @@
     "description": "From chaos to order -- manage your web finds effortlessly with Later Gator!",
     "action": {
         "default_popup": "index.html",
-        "default_icon": {
-            "icon1": "latergator.png" 
-        }
+        "default_icon": "icons/latergator.png" ,
+        "default_title": "LaterGator"
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage"
     ]
 }
     
