@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btn.addEventListener('click', () => {
         //begin new code added
-        console.log('test button');
         const tabTitleText = tabTitle.textContent;
         const reminderDateValue = reminderDate.value;
         const noteText = note.value;
