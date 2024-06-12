@@ -4,6 +4,8 @@ body{
   font-weight: 200;
   font-style: normal;
   margin: 50px;
+  background-color: #fccbd1;
+  color: #222222;
 }
 
 h1{
@@ -20,11 +22,22 @@ h2{
   font-weight: 1000;
 }
 
-.showSearchContainer{
+button{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  width: 100px;
+}
+
+/* .showSearchContainer{
   display: flex;
   align-items: flex-start;
   justify-content: center;
-}
+  border: 1px solid;
+  margin: 75px;
+  padding: 15px;
+} */
 
 .searchBar{
   font-family: "Josefin Sans", sans-serif;
@@ -32,18 +45,59 @@ h2{
   font-weight: 200;
   font-style: normal;
   width: 200px;
-}
-
-button{
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  width: 100px;
+  margin-right: 10px;
 }
 
 .saveButtonContainer{
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: auto auto auto;
   grid-gap: 1px;
+  align-items: center;
+}
+
+.watchListSection{
+  margin: 75px;
+  border: 1px solid #222222;
+  padding: 15px; 
+}
+
+.recSection{
+  margin: 75px;
+  border: 1px solid #222222;
+  padding: 15px; 
+}
+
+.searchSection{
+  margin: 75px;
+  border: 1px solid #222222;
+  padding: 15px; 
+  display: flex;
+  justify-content: center;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.genreSearchContainer,
+.showSearchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.genreDropdown {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.saveButtonContainer {
+  display: flex;
+  gap: 5px;
 }

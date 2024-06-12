@@ -7,6 +7,12 @@ const ShowSearchBar = ({ onSearch }) => {
     onSearch(query);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   return (
     <div className='showSearchContainer'>
       <input
@@ -15,8 +21,9 @@ const ShowSearchBar = ({ onSearch }) => {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search for a TV show"
+        onKeyDown={handleKeyDown}
       />
-      <button onClick={handleSearch} onKeyDown={e => e.key === 'Enter' ? handleSearch: ''}>
+      <button onClick={handleSearch}>
         Search
       </button>
     </div>

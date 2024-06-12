@@ -7,9 +7,10 @@ const RecommendationsList = ({ shows, onSave }) => {
 
   return (
     <div>
+      <h2>Recommendations</h2>
       {shows.map(show => (
         <div key={show.id}>
-          <h3>{show.name}</h3>
+          <h4>{show.name}</h4>
           <div className='saveButtonContainer'>
             <button onClick={() => handleSave(show, 'Currently Watching')}>Currently Watching</button>
             <button onClick={() => handleSave(show, 'Want to Watch')}>Want to Watch</button>
