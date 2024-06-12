@@ -1,0 +1,49 @@
+body{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin: 50px;
+}
+
+h1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 1000;
+}
+
+h2{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 1000;
+}
+
+.showSearchContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.searchBar{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  width: 200px;
+}
+
+button{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  width: 100px;
+}
+
+.saveButtonContainer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1px;
+}
