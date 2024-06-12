@@ -1,8 +1,10 @@
 .appHeader {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  padding: 1px;
+  padding: 5px;
   background-color: #fdfaf9;
   border: 1px solid #844f57;
   color: #222222;
@@ -11,17 +13,22 @@
 .appLogo {
   width: 200px;
   height: auto;
-  margin-right: 30px;
+  margin-right: 20px;
   margin-left: 20px;
 }
 
 .appHeader h1 {
   font-size: 40px;
   margin: 0;
+  /* flex: 1;  Ensures h1 takes up equal space */
+  text-align: center;
 }
 
 .appHeader h2 {
   font-size: 20px;
   font-style: italic;
   font-weight: 400;
+  margin: 0;
+  /* flex: 1;  Ensures h2 takes up equal space */
+  text-align: right;
 }

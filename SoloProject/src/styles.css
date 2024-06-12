@@ -48,23 +48,16 @@ button{
   margin-right: 10px;
 }
 
-.saveButtonContainer{
+/* .saveButtonContainer{
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 1px;
   align-items: center;
-}
+} */
 
-.watchListSection{
-  margin: 75px;
-  border: 1px solid #222222;
-  padding: 15px; 
-}
-
-.recSection{
-  margin: 75px;
-  border: 1px solid #222222;
-  padding: 15px; 
+.saveButtonContainer {
+  display: flex;
+  gap: 5px;
 }
 
 .searchSection{
@@ -97,7 +90,14 @@ button{
   font-family: "Josefin Sans", sans-serif;
 }
 
-.saveButtonContainer {
-  display: flex;
-  gap: 5px;
+.recSection{
+  margin: 75px;
+  border: 1px solid #222222;
+  padding: 15px; 
+}
+
+.watchListSection{
+  margin: 75px;
+  border: 1px solid #222222;
+  padding: 15px; 
 }
