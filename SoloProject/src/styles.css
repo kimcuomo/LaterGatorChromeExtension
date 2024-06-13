@@ -1,14 +1,14 @@
 body{
   font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
   font-style: normal;
   margin: 40px;
-  background-color: #fccbd1;
-  color: #222222;
+  background-color: #f5f5f5;
+  color: #333333;
 }
 
-h1{
+/* h1{
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -20,14 +20,40 @@ h2{
   align-items: flex-start;
   justify-content: center;
   font-weight: 1000;
+} */
+
+h1, h2 {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+  font-weight: 700; /* Use a stronger font weight */
+  margin: 20px 0; /* Add margin for spacing */
 }
 
-button{
+/* button{
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   width: 100px;
+} */
+
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 120px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1a2638;
+  color: #fdfaf9;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dd84a5; /* Darker shade on hover */
 }
 
 /* .showSearchContainer{
@@ -47,6 +73,9 @@ button{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: #fdfaf9;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .searchContainer {
@@ -55,7 +84,7 @@ button{
   align-items: center;
   align-content: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .search{
@@ -73,15 +102,20 @@ button{
 .searchBar{
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
-  width: 200px;
+  font-size: 15px;
+  width: 220px;
   margin-right: 10px;
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 15px;
 }
 
 .genreDropdown {
   margin-right: 10px;
-  padding: 5px;
+  padding: 8px;
   font-size: 14px;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -91,11 +125,12 @@ button{
   margin: 60px;
   border: 1px solid #222222;
   padding: 15px; 
+  background-color: #fdfaf9;
 }
 
 .saveButtonContainer {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 /* Watch List */
@@ -103,4 +138,5 @@ button{
   margin: 60px;
   border: 1px solid #222222;
   padding: 15px; 
+  background-color: #fdfaf9;
 }

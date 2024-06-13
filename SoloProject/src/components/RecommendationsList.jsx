@@ -26,3 +26,28 @@ const RecommendationsList = ({ shows, onSave }) => {
 };
 
 export default RecommendationsList;
+
+//ADDING CATEGORIES
+// import React from 'react';
+
+// const RecommendationsList = ({ shows, onSave }) => {
+//   return (
+//     <div>
+//       <h2>Recommendations</h2>
+//       {shows.map(show => (
+//         <div key={show.id}>
+//           <h4>{show.name}</h4>
+//           {show.image && <img src={show.image} alt={`${show.name} Poster`} />}
+//           <p dangerouslySetInnerHTML={{ __html: show.description }} /> 
+//           <div className='saveButtonContainer'>
+//             <button onClick={() => onSave(show, 'Currently Watching')}>Currently Watching</button>
+//             <button onClick={() => onSave(show, 'Want to Watch')}>Want to Watch</button>
+//             <button onClick={() => onSave(show, 'Already Watched')}>Already Watched</button>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default RecommendationsList;

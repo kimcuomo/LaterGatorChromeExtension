@@ -10,8 +10,6 @@ import './styles.css';
 const App = () => {
   const [shows, setShows] = useState([]);
   const [watchlist, setWatchlist] = useState([]);
-  // const [wantToWatchList, setWantToWatchList] = useState([]);
-  // const [watchedList, setWatchedList] = useState([]);
 
   const searchShows = async (query) => {
     try {
@@ -43,9 +41,29 @@ const App = () => {
     }
   };
 
-
   const saveShow = (show, label) => {
-    setWatchlist([...watchlist, { show, label }]);
+    // Check if the show is already in the watchlist
+    const showExists = watchlist.find(item => item.show.id === show.id);
+
+    if (showExists) {
+      // If show exists, update its label/category
+      const updatedWatchlist = watchlist.map(item => {
+        if (item.show.id === show.id) {
+          return { ...item, label };
+        }
+        return item;
+      });
+
+      setWatchlist(updatedWatchlist);
+    } else {
+      // If show doesn't exist, add it to the watchlist
+      setWatchlist([...watchlist, { show, label }]);
+    }
+  };
+
+  const handleDelete = (showId) => {
+    const updatedWatchlist = watchlist.filter(item => item.show.id !== showId);
+    setWatchlist(updatedWatchlist);
   };
 
   //THIS WAS AN ATTEMPT TO SAVE THE SHOW TO BE ORGANIZED INTO A SPECIFIC CATEGORY
@@ -92,7 +110,7 @@ const App = () => {
 
 
       <section className='watchListSection'>
-        <WatchList watchlist={watchlist} />
+        <WatchList watchlist={watchlist} onDelete={handleDelete}/>
       </section>
     </div>
   );
