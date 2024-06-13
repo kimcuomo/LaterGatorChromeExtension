@@ -140,3 +140,15 @@ button:hover {
   padding: 15px; 
   background-color: #fdfaf9;
 }
+
+.sortButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.sortSpan{
+  font-size: 20px
+}
