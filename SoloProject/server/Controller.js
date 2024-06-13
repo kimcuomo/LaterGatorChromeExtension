@@ -1,6 +1,6 @@
 const Show = require('./Model');
 
-const ShowController = {
+const Controller = {
 
   createShow(req, res, next) {
     const { showName, showStatus } = req.body;
