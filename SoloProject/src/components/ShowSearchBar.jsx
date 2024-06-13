@@ -5,6 +5,7 @@ const ShowSearchBar = ({ onSearch }) => {
 
   const handleSearch = () => {
     onSearch(query);
+    setQuery('');
   };
 
   const handleKeyDown = (e) => {
