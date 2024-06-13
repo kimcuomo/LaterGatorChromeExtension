@@ -3,7 +3,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  margin: 50px;
+  margin: 40px;
   background-color: #fccbd1;
   color: #222222;
 }
@@ -25,7 +25,7 @@ h2{
 button{
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 250;
+  font-weight: 300;
   font-style: normal;
   width: 100px;
 }
@@ -39,6 +39,37 @@ button{
   padding: 15px;
 } */
 
+/* Search */
+.searchSection{
+  margin: 60px;
+  border: 1px solid #222222;
+  padding: 15px; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.genreSearchContainer,
+.showSearchContainer {
+  display: flex;
+  align-items: center;
+}
+
 .searchBar{
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -48,41 +79,6 @@ button{
   margin-right: 10px;
 }
 
-/* .saveButtonContainer{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 1px;
-  align-items: center;
-} */
-
-.saveButtonContainer {
-  display: flex;
-  gap: 5px;
-}
-
-.searchSection{
-  margin: 75px;
-  border: 1px solid #222222;
-  padding: 15px; 
-  display: flex;
-  justify-content: center;
-}
-
-.searchContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-content: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.genreSearchContainer,
-.showSearchContainer {
-  display: flex;
-  align-items: center;
-}
-
 .genreDropdown {
   margin-right: 10px;
   padding: 5px;
@@ -90,14 +86,21 @@ button{
   font-family: "Josefin Sans", sans-serif;
 }
 
+/* Recommendations */
 .recSection{
-  margin: 75px;
+  margin: 60px;
   border: 1px solid #222222;
   padding: 15px; 
 }
 
+.saveButtonContainer {
+  display: flex;
+  gap: 5px;
+}
+
+/* Watch List */
 .watchListSection{
-  margin: 75px;
+  margin: 60px;
   border: 1px solid #222222;
   padding: 15px; 
 }

@@ -23,7 +23,7 @@ const GenreSearchBar = ({ onRandom }) => {
     onRandom(selectedGenre);
   };
 
-  return (
+return (
     <div className='genreSearchContainer'>
       <select
         className="genreDropdown"

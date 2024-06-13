@@ -11,7 +11,9 @@ const RecommendationsList = ({ shows, onSave }) => {
       {shows.map(show => (
         <div key={show.id}>
           <h4>{show.name}</h4>
-          {/* add show description */}
+          
+          {show.image && <img src={show.image} alt={`${show.name} Poster`} />}
+          <p dangerouslySetInnerHTML={{ __html: show.description }} /> 
           <div className='saveButtonContainer'>
             <button onClick={() => handleSave(show, 'Currently Watching')}>Currently Watching</button>
             <button onClick={() => handleSave(show, 'Want to Watch')}>Want to Watch</button>
