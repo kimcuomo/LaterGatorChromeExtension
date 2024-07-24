@@ -1,1 +1,1 @@
-# HackathonProject2024
+# Lator Gator
